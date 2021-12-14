@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        function Variaveis() {
+            var numeroUm = 0;
+            let numeroDois = 10;
+            var numeroTres = 20;
+
+            console.log(numeroUm);
+
+            numeroUm = numeroDois;
+            console.log(numeroUm);
+
+            numeroUm = numeroTres;
+            console.log(numeroUm);
+        }
+
+        function Constantes() {
+            const numeroUm = 0;
+            const numeroDois = 10;
+            const numeroTres = 20;
+
+            //essa linha causará um erro ao executar no navegador e olhar no console
+            numeroUm = numeroDois;
+        }
+
+        function OperadoresAritmeticos() {
+            var numeroUm = 10;
+            var numeroDois = 20;
+
+            console.log("Soma: " + (numeroUm + numeroDois));
+            console.log("Subtração: " + (numeroUm - numeroDois));
+            console.log("Multiplicação: " + (numeroUm * numeroDois));
+            console.log("Divisão: " + (numeroUm / numeroDois));
+            console.log("Resto: " + (numeroUm % numeroDois));
+        }
+
+        function OperadoresRelacionais() {
+            console.log(100 < 25);
+            console.log(150 > 100);
+            console.log(150 <= 140);
+            console.log(120 >= 120);
+            console.log(10 == 9);
+            console.log(9 != 9);
+        }
+
+        function OperadoresLogicos() {
+            var numeroUm = 10;
+            var numeroDois = 20;
+
+            console.log(numeroUm > 0 && numeroDois < 20);
+            console.log(numeroDois > 0 && numeroUm < 20);
+            console.log(numeroUm > 0 || numeroDois < 20);
+            console.log(numeroDois > 0 || numeroUm < 20);
+            console.log(!(numeroUm > 0 && numeroDois < 20));
+            console.log(!(numeroDois > 0 && numeroUm < 20));
+        }
+    </script>
+</head>
+<body>
+    <br />
+    <h3>Exemplo Javascript</h3>
+    <br />
+    <h4>Variáveis:</h4>
+    <input type="button" id="btnVariaveis" onclick="Variaveis();" value="Clique aqui e veja o resultado na aba Console" />
+    <br />
+    <h4>Constantes:</h4>
+    <input type="button" id="btnConstantes" onclick="Constantes();" value="Clique aqui e veja o resultado na aba Console" />
+    <br />
+    <h4>Operadores Aritméticos:</h4>
+    <input type="button" id="btnOperadoresAritmeticos" onclick="OperadoresAritmeticos();" value="Clique aqui e veja o resultado na aba Console" />
+    <br />
+    <h4>Operadores Relacionais:</h4>
+    <input type="button" id="btnOperadoresRelacionais" onclick="OperadoresRelacionais();" value="Clique aqui e veja o resultado na aba Console" />
+    <br />
+    <h4>Operadores Lógicos:</h4>
+    <input type="button" id="btnOperadoresLogicos" onclick="OperadoresLogicos();" value="Clique aqui e veja o resultado na aba Console" />
+    <br />
+</body>
+</html>
